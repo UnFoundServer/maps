@@ -1,7 +1,7 @@
 function init() {
     var myMap = new ymaps.Map('map', {
             center: [56.838011, 60.597474],
-            zoom: 10,
+            zoom: 15,
             type: 'yandex#map',
             behaviors: ['scrollZoom', 'drag']
             
