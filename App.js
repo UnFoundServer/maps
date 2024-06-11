@@ -1,9 +1,10 @@
 function init() {
     var myMap = new ymaps.Map('map', {
-            center: [60.906882, 30.067233],
-            zoom: 9,
+            center: [56.838011, 60.597474],
+            zoom: 6,
             type: 'yandex#map',
             behaviors: ['scrollZoom', 'drag']
+            
         }),
         searchStartPoint = new ymaps.control.SearchControl({
             useMapBounds: true,
@@ -44,6 +45,7 @@ function DeliveryCalculator(map, finish) {
     this._map = map;
     this._start = null;
     this._route = null;
+    
 
     map.events.add('click', this._onClick, this);
 }
